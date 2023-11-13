@@ -708,7 +708,26 @@
       display: none;
     }
   </style>
-  <audio src="/default/sound.mp3" autoplay loop></audio>
+<audio id="myAudio" autoplay loop>
+  <source src="default/sound.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  // Get the audio element
+  var audio = document.getElementById("myAudio");
+
+  // Function to play audio
+  function playAudio() {
+    audio.play();
+    // Remove the event listener after the first interaction if you want it to play only once
+    document.removeEventListener("mouseover", playAudio);
+  }
+
+  // Attach the function to the document to capture any interaction
+  document.addEventListener("mouseover", playAudio);
+
+</script>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 0 0"
@@ -1763,13 +1782,13 @@
                   </p>
 				  <marquee behavior="" direction="" style="display: flex;">
                   
-                    <img src="/default/02.jpg" alt="">
+                    <img src="/default/03.jpg" alt="" style="max-height: 400px;">
                  
                   
-                    <img src="/default/01.jpg" alt="">
+                    <img src="/default/01.jpg" alt="" style="max-height: 400px;">
                  
 				  
-					<img src="/default/03.jpg" alt="">
+					<img src="/default/02.jpg" alt="" style="max-height: 400px;">
 				 
 				</marquee>
                 </div>
@@ -1923,7 +1942,7 @@
               >
                 <div class="elementor-widget-container">
                   <h5 class="elementor-heading-title elementor-size-default">
-                    Contact: contact@galacticcredit.vip
+                    Contact: contact@galacticcreditstandard.vip
                   </h5>
                 </div>
               </div>
