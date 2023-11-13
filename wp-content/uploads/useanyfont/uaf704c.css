@@ -1,0 +1,10 @@
+				@font-face {
+					font-family: 'starwars';
+					src: url('8156STARWARS.woff2') format('woff2'),
+						url('8156STARWARS.woff') format('woff');
+					  font-display: auto;
+				}
+
+				.starwars{font-family: 'starwars' !important;}
+
+		
